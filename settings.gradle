@@ -1,0 +1,5 @@
+rootProject.name = 'eureka-microservice-samples'
+include "eureka-service"
+include "eureka-client"
+include "eureka-client-loadbalance"
+include "rest-demo"

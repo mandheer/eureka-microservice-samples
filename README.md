@@ -1,2 +1,2 @@
-# core-java-samples
-This will have Core Java samples
+# eureka-microservice-samples
+This will have implementation of Eureka Microservice Samples

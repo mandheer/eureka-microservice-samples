@@ -1,0 +1,24 @@
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:9009}/eureka/
+    instance:
+      appname: a-bootiful-client-loadbalance
+
+server:
+  port: 8085
+
+instance:
+  preferIpAddress: true
+
+spring:
+  application:
+    name: a-bootiful-client-loadbalance
+  security:
+    basic:
+      enabled: true
+    user:
+      name: eureka-user
+      password: eureka-pass
